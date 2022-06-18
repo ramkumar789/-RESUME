@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resume/CV Design</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".full_info_wrap .tabs ul li").click(function(){
+				$(".full_info_wrap .tabs ul li").removeClass("active");
+				$(this).addClass("active");
+
+				var datali = $(this).attr("data-li");
+
+				$(".full_info_item").hide();
+
+				if(datali == "experience"){
+					$(".experience").show();
+				}
+				else if(datali == "education"){
+					$(".education").show();
+				}
+				else if(datali == "contact"){
+					$(".contact").show();
+				}
+				else{
+					console.log("Loding...");
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	
+<div class="wrapper">
+   <div class="resume">
+      
+       <div class="profile_info">
+            <div class="profile_img">
+              <img src="profile_pic.png" alt="profile_img">
+            </div>
+            <div class="profile_data">
+                <p class="name">RAMAR </p>
+                <span><i class="fas fa-map-marker-alt"></i> Tiruppur, India</span>
+            </div>
+            <div class="view_more_btn">
+              <a href="#">View More</a>
+            </div>
+        </div>  
+      
+       <div class="skills">
+	       <div class="title">
+	          Skills
+	       </div>
+	       <ul>
+	         <li>
+	           <div class="skill_item html">
+	             <div class="icon"></div>
+	             <div class="text">HTML</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item css">
+	             <div class="icon"></div>
+	             <div class="text">CSS</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item js">
+	             <div class="icon"></div>
+	             <div class="text">Javascript</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item photoshop">
+	             <div class="icon"></div>
+	             <div class="text">Photoshop</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item angular">
+	             <div class="icon"></div>
+	             <div class="text">AngularJS</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item react">
+	             <div class="icon"></div>
+	             <div class="text">ReactJS</div>
+	           </div>
+	         </li>
+	       </ul>
+	    </div>
+     
+        <div class="full_info_wrap">
+            <div class="tabs">
+                <ul>
+                    <li data-li="experience" class="active">Experience</li>
+                    <li data-li="education">Education</li>
+                    <li data-li="contact">Contact</li>  
+                </ul>  
+            </div>  
+            
+            <div class="full_info">
+                <div class="full_info_item experience">
+                    <div class="title">TECHNICAL KNOWLEDGE</div>
+
+                    <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				Programming
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Python
+									</div>
+									<div class="data">
+										The python is my most preferable launguage done an computer vision  project using open cv .Face detecting ML project
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				MACHINE LEARNING
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Tableau
+									</div>
+									<div class="data">
+										My goal is to become an data analyst so I work on data sets since 2 years I am working on this learnt many core things to do.
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				MANAGEMENT
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Google
+									</div>
+									<div class="data">
+										Next, interest is marketing without this nothing can happen so I have learnt  some digital marketing and attended 2 months intenship in GOOGLE
+									</div>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item education" style="display: none;">
+                  <div class="title">EDUCATION</div>
+
+                  <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				2021-Present
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										KPR INSTITUE OF ENGINEERING AND TECHNOLOGY
+									</div>
+									<div class="data">
+										B.Tech artificial intelleigence and data science 
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				2007-2020	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										ARLM matric Hr Sec school
+									</div>
+									<div class="data">
+										 Schooling is known for its integrity, collaboration, and innovation, which are all values I strongly align with.
+									</div>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item contact" style="display: none;">
+                  <div class="title">CONTACT</div>
+
+                  <div class="info_wrap">
+                  	<ul>
+                  		<li>
+                  			<span class="info_q">Email</span>
+                  			<span class="info_a">ramarkumarasamy2003@gmail.com</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Website</span>
+                  			<span class="info_a">ram.rosey@gmail.com</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Phone</span>
+                  			<span class="info_a">7548822959</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Linkedin</span>
+                  			<span class="info_a">linkedin.com/ram kumar</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Facebook</span>
+                  			<span class="info_a">facebook.com/ram897</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Twitter</span>
+                  			<span class="info_a">twitter.com/Ram kumar</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Instagram</span>
+                  			<span class="info_a">instagram.com/mr_rosy_ram</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Github</span>
+                  			<span class="info_a">Github.com/ram kumar</span>
+                  		</li>
+                  	</ul>
+                  </div>
+                </div>  
+            </div> 
+        </div>
+     
+   </div>
+</div>
+
+</body>
+</html>
